@@ -1,4 +1,4 @@
-# Jd_Seckill
+# SnapUp
 
 ## 特别声明:
 
