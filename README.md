@@ -86,7 +86,6 @@
 #### 3. 填写config.ini配置信息 
 (1)`eid`和`fp`找个普通商品随便下单,然后抓包就能看到,这两个值可以填固定的 
 > 随便找一个商品下单，然后进入结算页面，打开浏览器的调试窗口，切换到控制台Tab页，在控制台中输入变量`_JdTdudfp`，即可从输出的Json中获取`eid`和`fp`。  
-> 不会的话参考原作者的issue https://github.com/zhou-xiaojun/jd_mask/issues/22
 
 (2)`sku_id`,`DEFAULT_USER_AGENT` 
 > `sku_id`已经按照茅台的填好。
@@ -110,12 +109,6 @@
 #### 4.运行main.py 
 根据提示选择相应功能即可。如果出现请扫码登录的提示可查看项目目录下是否存在`qr_code.png`文件,若存在打开图片，并使用京东手机APP扫码登录即可。
 
-- *Linux下命令行方式显示二维码（以Ubuntu为例）*
-
-```bash
-$ sudo apt-get install qrencode zbar-tools # 安装二维码解析和生成的工具，用于读取二维码并在命令行输出。
-$ zbarimg qr_code.png > qrcode.txt && qrencode -r qrcode.txt -o - -t UTF8 # 解析二维码输出到命令行窗口。
-```
 
 #### 5.抢购结果确认 
 抢购是否成功通常在程序开始的一分钟内可见分晓！  
